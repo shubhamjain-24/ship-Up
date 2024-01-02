@@ -1,0 +1,128 @@
+/* Main Container for Footer Section */
+.footer_mainContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  background-color: var(--color2); /* Set background color using CSS variable */
+  margin-top: 30px;
+  font-family: var(--font1); /* Set font family using CSS variable */
+  flex-direction: column;
+}
+
+/* Flex Container for Footer Content */
+.footer_flexContainer {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Individual Footer Content Divisions */
+.footer_div1,
+.footer_div2,
+.footer_div3,
+.footer_div4 {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+}
+
+/* Styling for Text in Footer Div 1 */
+.fd1_text1 {
+  color: var(--color1);
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28.8px;
+}
+
+/* Styling for Colorful Text in Footer Div 1 */
+.fd1_text1_color {
+  color: #fff;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28.8px;
+}
+
+/* Additional Text Style in Footer Div 1 */
+.fd1_text2 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+/* Styling for Heading in Footer Div 2 */
+.fd2_text1 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21.6px;
+  color: white;
+}
+
+/* Styling for Subheading in Footer Div 2 */
+.fd2_text2 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16.8px;
+  color: white;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* Styling for List in Footer Div 2 */
+.fd2_list {
+  margin-top: 20px;
+}
+
+/* Styling for Social Icons in Footer Div 4 */
+.fd4_iconsDiv {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  gap: 20px;
+  margin-top: 15px;
+}
+
+/* Styling for Individual Social Icon in Footer Div 4 */
+.fd4_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+/* Styling for Horizontal Line Separator */
+.line {
+  border-bottom: 1px solid white;
+  margin-top: 50px;
+  width: 80%;
+}
+
+/* Additional Text Style in Footer Section */
+.fd_text {
+  margin-top: 30px;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  color: #fff;
+}
+
+/* Styling for Colorful Text with Bold Font */
+.fd_text_color,
+.fd_text_color2 {
+  color: var(--color1);
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+/* Additional Styling for Colorful Text in Footer Section */
+.fd_text_color2 {
+  color: #fff;
+}

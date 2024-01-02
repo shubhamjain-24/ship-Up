@@ -1,0 +1,129 @@
+/* Main Container for Pricing Section */
+.price_mainContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  margin-top: 40px;
+  font-family: var(--font1);
+}
+
+/* Sub Container for Pricing Items */
+.price_subContainer {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 36px;
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* Input Field Styling */
+.input-field {
+  position: relative;
+  display: inline-block;
+}
+
+.input-field input::placeholder {
+  color: #979797;
+}
+
+.input-field input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  width: 250px;
+  padding-left: 50px;
+  height: 64px;
+  color: var(--color2);
+}
+
+/* Location Icon Styling */
+.location-icon {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  font-size: 1.5em;
+  color: var(--color2);
+}
+
+.input-field::before {
+  content: "Origin";
+  position: absolute;
+  top: -15px;
+  left: 30px;
+  background-color: white;
+  padding: 0 8px;
+  color: #979797;
+}
+
+/* Additional Input Fields and Styling */
+.input-field2,
+.input-field3 {
+  position: relative;
+  display: inline-block;
+}
+
+.input-field2 input::placeholder,
+.input-field3 input::placeholder {
+  color: #979797;
+}
+
+.input-field2 input,
+.input-field3 input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  width: 250px;
+  padding-left: 50px;
+  height: 64px;
+  color: var(--color2);
+}
+
+.input-field2::before,
+.input-field3::before {
+  content: "Destination";
+  position: absolute;
+  top: -15px;
+  left: 30px;
+  background-color: white;
+  padding: 0 8px;
+  color: #979797;
+}
+
+.input-field3::before {
+  content: "Weight";
+}
+
+/* Button Styling */
+.input-button {
+  width: 250px;
+  height: 73px;
+  border-radius: 12px;
+  padding: 28px;
+  background-color: var(--color2);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 16.8px;
+  cursor: pointer;
+}
+
+/* Responsive Styling for small screens */
+@media screen and (max-width: 400px) {
+  .price_subContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}

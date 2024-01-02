@@ -1,0 +1,14 @@
+:root {
+  --color1: #f67366;
+  --color2: #2c2d5b;
+  --font1: "Lato", sans-serif;
+}
+
+body {
+  color: var(--primary-color);
+  font-family: var(--font-family);
+}
+body.menu-open {
+  background-color: green; /* Set the background color when the menu is open */
+  overflow: hidden;
+}

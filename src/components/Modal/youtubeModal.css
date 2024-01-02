@@ -1,0 +1,10 @@
+.custom_button{
+    font-size: 30px;
+    background-color: white;
+    border: none;
+}
+.custom-modal-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
