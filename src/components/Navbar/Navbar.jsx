@@ -33,7 +33,7 @@ const CustomNavbar = () => {
           {/* Main Navigation Links */}
           <Nav className="me-auto Nav_text">
             {/* Company Dropdown */}
-            <NavDropdown title="Company" id="collapsible-nav-dropdown">
+            <NavDropdown title="Company" id="collapsible-nav-dropdown" className="DropDown_mainContainer">
               <div className="dropdown">
                 {/* Dropdown Item 1 */}
                 <NavDropdown.Item href="#action/3.1" className="dropdown-item">
@@ -63,7 +63,6 @@ const CustomNavbar = () => {
                         </div>
                       </div>
                     </div>
-                  </div>
                   {/* Subitem 3 */}
                   <div className="item1">
                     <div className="item_logo">
@@ -73,6 +72,7 @@ const CustomNavbar = () => {
                       <div className="item_headtext">Career</div>
                       <div className="item_subtext">Join the ShipUp</div>
                     </div>
+                  </div>
                   </div>
                 </NavDropdown.Item>
 
@@ -90,33 +90,37 @@ const CustomNavbar = () => {
                         News and awards
                       </div>
                     </div>
-                  </div>
                   {/* Subitem 3 */}
-                  <div className="item1">
+                  <div className="item1 drop_down_btn">
                     <div style={{ marginTop: "-30px", cursor: "pointer" }} className="item_subtext_2">
                       Learn More &nbsp; <FaArrowRight />
                     </div>
+                  </div>
                   </div>
                 </div>
               </div>
             </NavDropdown>
 
             {/* Additional Navigation Links */}
-            <Nav.Link href="#features" className="mx-2 pl-3 pr-3">
+            <div className="nav_menu_listDiv">
+
+            
+            <Nav.Link href="#features" className="mx-2 pl-3 pr-3 drop_menu">
               Services
             </Nav.Link>
-            <Nav.Link href="#sol" className="mx-2 pl-3 pr-3">
+            <Nav.Link href="#sol" className="mx-2 pl-3 pr-3 drop_menu">
               Solutions
             </Nav.Link>
-            <Nav.Link href="#industries" className="mx-2 pl-3 pr-3">
+            <Nav.Link href="#industries" className="mx-2 pl-3 pr-3 drop_menu">
               Industries
             </Nav.Link>
-            <Nav.Link href="#insights" className="mx-2 pl-3 pr-3">
+            <Nav.Link href="#insights" className="mx-2 pl-3 pr-3 drop_menu">
               Insights
             </Nav.Link>
-            <Nav.Link href="#news" className="mx-2 pl-3 pr-3">
+            <Nav.Link href="#news" className="mx-2 pl-3 pr-3 drop_menu">
               News And Media
             </Nav.Link>
+            </div>
           </Nav>
 
           {/* Buttons in Navbar */}

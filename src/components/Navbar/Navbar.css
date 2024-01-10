@@ -155,6 +155,11 @@
   min-height: 100%;
 }
 
+/* new adons */
+.nav_menu_listDiv{
+  display: flex;
+}
+
 @media screen and (max-width: 1200px) {
     .button1,
     .button2 {
@@ -169,10 +174,16 @@
         display: none;
     }
   }
+  @media screen and (max-width: 990px){
+    .nav_menu_listDiv{
+      display: block;
+    }
+  }
   @media screen and (max-width: 900px){
     .dropdown{
         display: block;
     }
+    
   }
 @media screen and (max-width: 550px) {
     .button1,
@@ -202,16 +213,13 @@
   
     .dropdown {
       display: block;
-    }
-  
-    .dropdown-item {
-      width: 100%;
+      left: -30px;
     }
   
     .dropdown_head {
       font-size: 20px;
     }
-  
+    
     .item1 {
       flex-direction: column;
       text-align: center;
@@ -223,19 +231,59 @@
       height: 50px;
       font-size: 24px;
     }
+    .DropDown_mainContainer{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .dropdown{
+      width: 370px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .dropdown-item{
+      /* border: 1px solid red; */
+      width: 300px;
+      margin-left: 50px;
+    }
+    #responsive-navbar-nav{
+      width: 80%;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .nav_menu_listDiv{
+      width: fit-content;
+      margin: 0;
+      margin-left: 75px;
+      margin-bottom: 10px;
+    }
+    .Nav_buttons {
+      margin-bottom: 20px;
+    }
+    .button2{
+      margin-top: 5px;
+    }
   }
   
-@media screen and (max-width: 399px) {
+@media screen and (max-width: 400px) {
     
     .Nav_buttons {
       flex-direction: column;
       align-items: center;
-      margin-top: 20px; 
+      padding-bottom: 20px;
+      margin-left: 15px;
+      width: 300px;
     }
   
     .button1,
     .button2 {
-      width: 50%;
+      font-size: 14px;
+      width: 40%;
       margin-bottom: 10px; 
     }
   
@@ -247,20 +295,12 @@
       margin: 0;
       margin-bottom: 10px; 
     }
-  
-    .dropdown {
-      width: 100%;
-      
-    }
-  
     .dropdown_head {
-      font-size: 20px;
+      font-size: 18px;
+      margin-left: 20px;
     }
   
-    .dropdown-item {
-      width: 100%;
-    }
-  
+   
     .item1 {
       flex-direction: column;
       text-align: center;
@@ -268,19 +308,43 @@
     }
   
     .item_logo {
-      width: 50px;
-      height: 50px;
-      font-size: 24px;
+      width: 30px;
+      height: 30px;
+      font-size: 20px;
     }
   
     .drop_listitem,
     .drop_listitem2 {
       max-width: 100%; 
+      margin-left: 80px;
     }
-  
+  .item_headtext{
+    font-size: 16px;
+  }
+  .item_subtext{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+  }
     .drop_listitem2 {
       padding: 10px; 
     }
+    .nav_menu_listDiv{
+      width: 80%;
+      margin-top: -10px;
+    }
+    .dropdown-item{
+      /* border: 1px solid red; */
+      width: 300px;
+      margin-left: -10px;
+    }
+    .dropdown{
+      width: 300px;
+    }
+    
+    
   }
 
  
