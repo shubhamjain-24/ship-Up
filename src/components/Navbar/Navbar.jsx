@@ -29,7 +29,7 @@ const CustomNavbar = () => {
         <BootstrapNavbar.Toggle aria-controls="responsive-navbar-nav" />
 
         {/* Navbar Collapse Section */}
-        <BootstrapNavbar.Collapse id="responsive-navbar-nav">
+        <BootstrapNavbar.Collapse id="responsive-navbar-nav" className="responsive-navbar-nav">
           {/* Main Navigation Links */}
           <Nav className="me-auto Nav_text">
             {/* Company Dropdown */}

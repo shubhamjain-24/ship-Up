@@ -249,7 +249,7 @@
       width: 300px;
       margin-left: 50px;
     }
-    #responsive-navbar-nav{
+    .responsive-navbar-nav{
       width: 80%;
       display: flex;
       align-content: center;
