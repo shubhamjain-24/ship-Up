@@ -2,7 +2,7 @@
     height: 127px ;
     font-family: var(--font1);
     position: relative;
-    background-color: white;
+    background-color: white !important;
     z-index: 2;
 }
 .Nav_container{
