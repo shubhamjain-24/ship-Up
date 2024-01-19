@@ -186,6 +186,7 @@
     
   }
 @media screen and (max-width: 550px) {
+  
     .button1,
     .button2 {
       padding: 10px 20px;
@@ -267,6 +268,9 @@
     }
     .button2{
       margin-top: 5px;
+    }
+    .NavbarContianer {
+      height: auto;
     }
   }
   
